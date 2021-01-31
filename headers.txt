@@ -1,0 +1,20 @@
+Request Headers
+User-Agent: Describes the browser or tool that made the request.
+Accept: Type of formatting that is preferred, JSON, XML etc.
+Postman-Token: Custom token by postman.
+Host: Where the request is going to, what server.
+Accept-Encoding: What encoding the client can understand.
+Connection: Controls whether or not the network connection stays open after transaction.
+
+Response Headers
+Content-Type: The media type of the resource.
+Vary: Determines how to match future request headers to decide whether a cached response can be used.
+Content-Encoding: Used to compress the media-type.
+Date: Time message was originated.
+Server: Software used by the origin server that handled the request.
+Cache-Control: Instructions for caching both request and responses.
+X-XSS-Protection: Prevents pages from loading when an XSS attack is found.
+X-Frame-Options: Indicates whether or not a browser should be allowed to render a page.
+X-Content-Type-Options: A marker used by the server to indicate that the MIME types are used.
+Alt-Svc: Used to advertise alternative services through which the same resource can be reached.
+Transfer-Encoding: The form of encoding used to transfer payload body to user.
