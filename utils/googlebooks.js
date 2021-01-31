@@ -9,17 +9,17 @@ module.exports = async (phrase) => {
     })
 
 
-    //return JSON.stringify(results.data);
     //create a new object
-    //TODO: NOT REQUIRED FOR SUBJMISSION
     let customObject = {
-        data: results.date,
+        data: results.data,
         status: results.status,
         statusText: results.statusText,
         headers: results.headers,
-        requestHeader: results.config.headers
+        requestHeader: (results.config ? results.config.headers : null)
     }
 
+    //was just using results.data
+    return JSON.stringify(customObject);
 }
 
 /*  console.log(results.data);
